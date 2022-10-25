@@ -1216,7 +1216,7 @@ public class UtilIT {
             optionalQueryParam = "&persistentId=" + idOrPersistentId;
         }
         if(mustBeIndexed) {
-            optionalQueryParam = optionalQueryParam+"&assureIsIndexed=true";
+            optionalQueryParam = optionalQueryParam+"&assureIsIndexed=false";
         }
         RequestSpecification requestSpecification = given();
         if (apiToken != null) {
